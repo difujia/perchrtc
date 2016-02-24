@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.frameworks   = 'QuartzCore', 'OpenGLES', 'GLKit', 'CoreAudio', 'CoreMedia', 'CoreVideo', 'AVFoundation', 'AudioToolbox', 'UIKit', 'Foundation', 'CoreGraphics', 'VideoToolbox'
   s.libraries = 'c', 'sqlite3', 'stdc++'
 
+  s.source       = { :git => 'https://github.com/difujia/perchrtc.git', :branch => 'feature/sdk-repack' }
   s.source_files = 'PerchRTC/PerchRTC.h'
   s.source_files = 'PerchRTC/{Audio,Capture,Logging,Media,Renderers}/*.{h,m}'
   s.public_header_files = 'PerchRTC/PerchRTC.h'
